@@ -2,7 +2,7 @@
 
 
 
-\## 1. 学生表（students）
+\## 1. 学生档案表（students）
 
 
 
