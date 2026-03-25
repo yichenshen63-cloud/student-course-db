@@ -58,3 +58,41 @@ CREATE TABLE students (
 
 | department | VARCHAR(100) | NOT NULL | 院系 |
 
+
+
+\## 3. 课程表（courses）
+
+
+
+| 字段名 | 数据类型 | 说明 |
+
+|---|---|---|
+
+| course\_id | VARCHAR(20) | 课程号 |
+
+| name | VARCHAR(100) | 课程名 |
+
+| credits | DECIMAL(3,1) | 学分 |
+
+| teacher\_id | VARCHAR(20) | 教师编号 |
+
+
+
+\## 4. 选课成绩表（enrollments）
+
+
+
+| 字段名 | 数据类型 | 说明 |
+
+|---|---|---|
+
+| id | INT | 主键 |
+
+| student\_id | VARCHAR(20) | 学号 |
+
+| course\_id | VARCHAR(20) | 课程号 |
+
+| score | DECIMAL(5,2) | 成绩 |
+
+
+
