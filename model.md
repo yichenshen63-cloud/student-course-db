@@ -82,17 +82,17 @@ CREATE TABLE students (
 
 
 
-| 字段名 | 数据类型 | 说明 |
+| 字段名 | 数据类型 | 约束 | 说明 |
 
-|---|---|---|
+|---|---|---|---|
 
-| id | INT | 主键 |
+| id | INT | PRIMARY KEY, AUTO\_INCREMENT | 自增主键 |
 
-| student\_id | VARCHAR(20) | 学号 |
+| student\_id | VARCHAR(20) | NOT NULL, FK → students(student\_id) | 学号 |
 
-| course\_id | VARCHAR(20) | 课程号 |
+| course\_id | VARCHAR(20) | NOT NULL, FK → courses(course\_id) | 课程号 |
 
-| score | DECIMAL(5,2) | 成绩 |
+| semester | VARCHAR(20) | NOT NULL | 学期 |
 
-
+| score | DECIMAL(5,2) | CHECK(score>=0 AND score<=100) | 成绩 |
 
