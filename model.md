@@ -6,17 +6,17 @@
 
 
 
-| 字段名 | 数据类型 | 说明 |
+| 字段名 | 数据类型 | 约束 | 说明 |
 
-|---|---|---|
+|---|---|---|---|
 
-| stu\_id | VARCHAR(20) | 学号 |
+| stu\_id | VARCHAR(20) | PRIMARY KEY | 学号 |
 
-| name | VARCHAR(50) | 姓名 |
+| name | VARCHAR(50) | NOT NULL | 姓名 |
 
-| gender | VARCHAR(10) | 性别 |
+| gender | VARCHAR(10) | NOT NULL | 性别 |
 
-| email | VARCHAR(100) | 邮箱 |
+| email | VARCHAR(100) | UNIQUE | 邮箱 |
 
 
 
@@ -24,13 +24,13 @@
 
 
 
-| 字段名 | 数据类型 | 说明 |
+| 字段名 | 数据类型 | 约束 | 说明 |
 
-|---|---|---|
+|---|---|---|---|
 
-| teacher\_id | VARCHAR(20) | 教师编号 |
+| teacher\_id | VARCHAR(20) | PRIMARY KEY | 教师编号 |
 
-| name | VARCHAR(50) | 姓名 |
+| name | VARCHAR(50) | NOT NULL | 姓名 |
 
-| department | VARCHAR(100) | 院系 |
+| department | VARCHAR(100) | NOT NULL | 院系 |
 
