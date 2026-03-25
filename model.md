@@ -14,11 +14,35 @@
 
 | name | VARCHAR(50) | NOT NULL | 姓名 |
 
-| gender | VARCHAR(10) | NOT NULL | 性别 |
+| gender | CHAR(1) | NOT NULL, CHECK(gender IN ('M','F')) | 性别 |
+
+| birth\_date | DATE | | 出生日期 |
+
+| class | VARCHAR(50) | | 班级 |
 
 | email | VARCHAR(100) | UNIQUE | 邮箱 |
 
 
+
+```sql
+
+CREATE TABLE students (
+
+&#x20;   stu\_id     VARCHAR(20)  PRIMARY KEY,
+
+&#x20;   name       VARCHAR(50)  NOT NULL,
+
+&#x20;   gender     CHAR(1)      NOT NULL CHECK (gender IN ('M', 'F')),
+
+&#x20;   birth\_date DATE,
+
+&#x20;   class      VARCHAR(50),
+
+&#x20;   email      VARCHAR(100) UNIQUE
+
+);
+
+```
 
 \## 2. 教师表（teachers）
 
